@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario - Pro Invester</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS para el estilo -->
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="Logo Pro Invester" class="logo" />
+    </div>
+  </header>
+
+  <div class="form-container">
+    <h1>Registro de Usuario</h1>
+    <p>Por favor, ingresa tus datos para registrarte. Te llamaremos pronto.</p>
+
+    <!-- Formulario de registro -->
+    <form id="registration-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" required placeholder="Ingresa tus apellidos">
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required placeholder="Ingresa tu correo">
+
+      <label for="indicativo">Indicativo de País:</label>
+      <input type="text" id="indicativo" name="indicativo" required placeholder="Ej: +34">
+
+      <label for="telefono">Número de teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required placeholder="Ingresa tu número de teléfono">
+
+      <button type="submit">Registrarse</button>
+    </form>
+
+    <!-- Mensaje de confirmación (inicialmente oculto) -->
+    <p id="confirmation-message" style="display:none; color: #FFD700; text-align: center;">Gracias por registrarte. En breve nos pondremos en contacto contigo.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Pro Invester. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="formulario.js"></script> <!-- Enlace al archivo JavaScript para la funcionalidad -->
+</body>
+</html>
